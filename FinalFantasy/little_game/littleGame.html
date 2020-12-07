@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/final_fantasy_legends_logo_by_eldi13.png" type="image/gif" sizes="16x16">
+    <title>Little Game</title>
+    <link rel="stylesheet" href="css/lg.css">
+</head>
+
+<body>
+
+
+    <div id="msgitem1"><img src="img/cry.PNG" alt="">
+        <h3>'Σ(￣□￣ 不是你的錯 都是滑鼠壞壞'</h3>
+    </div>
+    <div id="msgitem2"><img src="img/good.PNG" alt="">
+        <h3>'酷哦! 可以哦!★‧\(￣▽￣)/‧°★*'</h3>
+    </div>
+    <div id="msgitem3">
+        <span id="close_btn">&times;</span>
+        <img src="img/gamesrc .PNG" alt="">
+    </div>
+
+
+    <div class="container">
+        <div class="wrap_top">
+            <div id="item_top_L">
+                <div id="bag1" onmousedown="divMouseDown(event)" onmouseup="divMouseUp(event)"><img id="cuteguys1" src="img/ff-cuteguys.png" alt="">
+                </div>
+                <div id="bag2" onmousedown="divMouseDown(event)" onmouseup="divMouseUp(event)"><img id="cuteguys2" src="img/FF-mogole.png" alt="">
+                </div>
+                <div id="bag3" onmousedown="divMouseDown(event)" onmouseup="divMouseUp(event)"><img id="cuteguys3" src="img/picu.gif" alt="">
+                </div>
+            </div>
+            <pre></pre>
+            <div id="item_top_R">
+                <p>剩餘時間:</p>
+                <p id="timer"></p>
+                <p>食指指力:</p>
+                <p id="score"></p>
+                <p>中原超標準時間:</p>
+                <p id="nowTime"></p>
+                <img id="showrule" onclick="ruleMsg()" src="img/Chocobo.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="wrap_bottom">
+            <div id="item3">
+                <button id="startGames" onclick="startGame()">Start</button>
+
+            </div>
+        </div>
+
+        <script src="js/lg.js"></script>
+</body>
+
+</html>

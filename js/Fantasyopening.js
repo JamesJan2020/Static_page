@@ -1,19 +1,15 @@
+// loading...
+let dot = "";
+setInterval(function () {
+    dot += ".";
+    if (dot === ".....") {
+        return (dot = "");
+    }//當...長度到達指定數量 回傳空自串
+    document.getElementById("dotHome").innerHTML = dot; //寫出來
+}, 700);// 每0.7秒執行一次
 
-// loding...
-setInterval(creatDot, 700) // 每0.7秒執行一次
-var dot = '';
-function creatDot() {
-    for (i = 0; i < 1; i++) {
-        dot += ".";
-        var dd = dot
-        //當...長度到達指定數量 回傳空自串
-        if (dd == '......') {
-            return dot = '';
-        }
-    }
-    //寫出來
-    document.getElementById("dotHome").innerText = dot
-}
+
+
 
 // 4秒後pointer出現
 setTimeout(opPointer, 4000)
@@ -66,9 +62,9 @@ function movePointer(upDown) {
         //選到開始 按Enter 跳轉到首頁或返回(視窗關掉)
         case 13:
             if (current == 20) {
-            document.location.href = "Fantasy.html";
+                document.location.href = "Fantasy.html";
             }
-            else{
+            else {
                 document.location.href = "Fantasyopening.html";
             }
             break;
